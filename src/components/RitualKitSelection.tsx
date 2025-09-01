@@ -23,6 +23,7 @@ export const RitualKitSelection: React.FC<RitualKitSelectionProps> = ({
   onBack
 }) => {
   const availableKits = ritualKits[selectedReligion] || [];
+  const availableAddOns = addOns[selectedReligion] || [];
   const totalPrice = (selectedKit?.price || 0) + selectedAddOns.reduce((sum, addon) => sum + addon.price, 0);
 
   return (
@@ -71,7 +72,7 @@ export const RitualKitSelection: React.FC<RitualKitSelectionProps> = ({
         <div className="mb-8">
           <h3 className="text-xl font-semibold text-gray-800 mb-4">Additional Items (Optional)</h3>
           <div className="grid md:grid-cols-2 gap-4">
-            {addOns.map((addOn) => {
+            {availableAddOns.map((addOn) => {
               const isSelected = selectedAddOns.some(item => item.id === addOn.id);
               return (
                 <div
