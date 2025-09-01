@@ -51,8 +51,8 @@ export const ConfirmationPage: React.FC<ConfirmationPageProps> = ({
             Our team will contact you shortly to confirm the arrangements and coordinate the services.
           </p>
           
-          <div className="bg-blue-50 p-6 rounded-lg">
-            <h3 className="text-lg font-semibold text-blue-900 mb-4">What happens next?</h3>
+          <div className="bg-amber-50 p-6 rounded-lg">
+            <h3 className="text-lg font-semibold text-amber-900 mb-4">What happens next?</h3>
             <div className="space-y-3 text-left">
               <div className="flex items-center">
                 <Clock className="w-5 h-5 text-blue-600 mr-3" />
