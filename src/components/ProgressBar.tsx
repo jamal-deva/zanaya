@@ -36,8 +36,8 @@ export const ProgressBar: React.FC<ProgressBarProps> = ({ currentStep }) => {
                 <div
                   className={`
                     w-10 h-10 rounded-full flex items-center justify-center text-sm font-medium transition-all duration-300
-                    ${isCompleted ? 'bg-blue-600 text-white' : ''}
-                    ${isCurrent ? 'bg-blue-500 text-white ring-4 ring-blue-200' : ''}
+                    ${isCompleted ? 'bg-amber-700 text-white' : ''}
+                    ${isCurrent ? 'bg-amber-600 text-white ring-4 ring-amber-200' : ''}
                     ${isUpcoming ? 'bg-gray-200 text-gray-600' : ''}
                   `}
                 >
@@ -46,7 +46,7 @@ export const ProgressBar: React.FC<ProgressBarProps> = ({ currentStep }) => {
                 <span 
                   className={`
                     mt-2 text-xs font-medium text-center
-                    ${isCompleted || isCurrent ? 'text-blue-600' : 'text-gray-500'}
+                    ${isCompleted || isCurrent ? 'text-amber-700' : 'text-gray-500'}
                   `}
                 >
                   {step.label}
@@ -56,7 +56,7 @@ export const ProgressBar: React.FC<ProgressBarProps> = ({ currentStep }) => {
                 <div 
                   className={`
                     flex-1 h-1 mx-4 transition-all duration-300
-                    ${isCompleted ? 'bg-blue-600' : 'bg-gray-200'}
+                    ${isCompleted ? 'bg-amber-700' : 'bg-gray-200'}
                   `}
                 />
               )}

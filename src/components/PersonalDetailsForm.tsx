@@ -82,7 +82,7 @@ export const PersonalDetailsForm: React.FC<PersonalDetailsFormProps> = ({
               value={personalDetails.fullName}
               onChange={(e) => handleInputChange('fullName', e.target.value)}
               className={`
-                w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500
+                w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500
                 transition-colors duration-200
                 ${errors.fullName ? 'border-red-500' : 'border-gray-300'}
               `}
@@ -103,7 +103,7 @@ export const PersonalDetailsForm: React.FC<PersonalDetailsFormProps> = ({
               value={personalDetails.phoneNumber}
               onChange={(e) => handleInputChange('phoneNumber', e.target.value)}
               className={`
-                w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500
+                w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500
                 transition-colors duration-200
                 ${errors.phoneNumber ? 'border-red-500' : 'border-gray-300'}
               `}
@@ -124,7 +124,7 @@ export const PersonalDetailsForm: React.FC<PersonalDetailsFormProps> = ({
               onChange={(e) => handleInputChange('address', e.target.value)}
               rows={3}
               className={`
-                w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500
+                w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500
                 transition-colors duration-200 resize-none
                 ${errors.address ? 'border-red-500' : 'border-gray-300'}
               `}
@@ -145,8 +145,8 @@ export const PersonalDetailsForm: React.FC<PersonalDetailsFormProps> = ({
               onChange={(e) => handleInputChange('specialNotes', e.target.value)}
               rows={3}
               className="
-                w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 
-                focus:border-blue-500 transition-colors duration-200 resize-none
+                w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 
+                focus:border-amber-500 transition-colors duration-200 resize-none
               "
               placeholder="Any specific requirements or notes for our team"
             />
@@ -169,9 +169,9 @@ export const PersonalDetailsForm: React.FC<PersonalDetailsFormProps> = ({
         <button
           onClick={handleSubmit}
           className="
-            bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium
+            bg-amber-700 hover:bg-amber-800 text-white px-8 py-3 rounded-lg font-medium
             transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1
-            focus:outline-none focus:ring-4 focus:ring-blue-200
+            focus:outline-none focus:ring-4 focus:ring-amber-200
           "
         >
           Review & Submit

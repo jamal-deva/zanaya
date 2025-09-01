@@ -65,7 +65,7 @@ export const ServicesSelection: React.FC<ServicesSelectionProps> = ({
                       p-4 rounded-lg border-2 cursor-pointer transition-all duration-300
                       hover:shadow-md
                       ${isSelected
-                        ? 'border-blue-600 bg-blue-50'
+                        ? 'border-amber-600 bg-amber-50'
                         : 'border-gray-200 bg-white hover:border-gray-300'
                       }
                     `}
@@ -73,7 +73,7 @@ export const ServicesSelection: React.FC<ServicesSelectionProps> = ({
                   >
                     <div className="flex justify-between items-start mb-2">
                       <h4 className="font-medium text-gray-900">{service.name}</h4>
-                      <span className="font-semibold text-blue-600">₹{service.price}</span>
+                      <span className="font-semibold text-amber-700">₹{service.price}</span>
                     </div>
                     <p className="text-sm text-gray-600">{service.description}</p>
                   </div>
@@ -89,7 +89,7 @@ export const ServicesSelection: React.FC<ServicesSelectionProps> = ({
         <div className="bg-gray-50 p-4 rounded-lg mb-6">
           <div className="flex justify-between items-center">
             <span className="text-lg font-medium text-gray-900">Services Total:</span>
-            <span className="text-2xl font-bold text-blue-600">₹{totalServicesPrice}</span>
+            <span className="text-2xl font-bold text-amber-700">₹{totalServicesPrice}</span>
           </div>
         </div>
       )}
@@ -109,9 +109,9 @@ export const ServicesSelection: React.FC<ServicesSelectionProps> = ({
         <button
           onClick={onNext}
           className="
-            bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium
+            bg-amber-700 hover:bg-amber-800 text-white px-8 py-3 rounded-lg font-medium
             transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1
-            focus:outline-none focus:ring-4 focus:ring-blue-200
+            focus:outline-none focus:ring-4 focus:ring-amber-200
           "
         >
           Continue to Personal Details

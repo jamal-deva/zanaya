@@ -189,7 +189,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+    <div className="min-h-screen bg-gradient-to-br from-amber-50 to-orange-100">
       <div className="container mx-auto px-6 py-8">
         <ProgressBar currentStep={currentStep} />
         {renderCurrentStep()}

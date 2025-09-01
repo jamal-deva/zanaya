@@ -48,7 +48,7 @@ export const RitualKitSelection: React.FC<RitualKitSelectionProps> = ({
                 p-6 rounded-lg border-2 cursor-pointer transition-all duration-300
                 hover:shadow-md transform hover:-translate-y-1
                 ${selectedKit?.id === kit.id
-                  ? 'border-blue-600 bg-blue-50'
+                  ? 'border-amber-600 bg-amber-50'
                   : 'border-gray-200 bg-white hover:border-gray-300'
                 }
               `}
@@ -56,7 +56,7 @@ export const RitualKitSelection: React.FC<RitualKitSelectionProps> = ({
             >
               <div className="flex justify-between items-start mb-2">
                 <h4 className="text-lg font-medium text-gray-900">{kit.name}</h4>
-                <span className="text-lg font-semibold text-blue-600">₹{kit.price}</span>
+                <span className="text-lg font-semibold text-amber-700">₹{kit.price}</span>
               </div>
               <p className="text-gray-600 mb-3">{kit.description}</p>
               <div className="text-sm text-gray-500">
@@ -81,7 +81,7 @@ export const RitualKitSelection: React.FC<RitualKitSelectionProps> = ({
                     p-4 rounded-lg border-2 cursor-pointer transition-all duration-300
                     hover:shadow-md
                     ${isSelected
-                      ? 'border-blue-600 bg-blue-50'
+                      ? 'border-amber-600 bg-amber-50'
                       : 'border-gray-200 bg-white hover:border-gray-300'
                     }
                   `}
@@ -89,7 +89,7 @@ export const RitualKitSelection: React.FC<RitualKitSelectionProps> = ({
                 >
                   <div className="flex justify-between items-start mb-2">
                     <h4 className="font-medium text-gray-900">{addOn.name}</h4>
-                    <span className="font-semibold text-blue-600">₹{addOn.price}</span>
+                    <span className="font-semibold text-amber-700">₹{addOn.price}</span>
                   </div>
                   <p className="text-sm text-gray-600">{addOn.description}</p>
                 </div>
@@ -104,7 +104,7 @@ export const RitualKitSelection: React.FC<RitualKitSelectionProps> = ({
         <div className="bg-gray-50 p-4 rounded-lg mb-6">
           <div className="flex justify-between items-center">
             <span className="text-lg font-medium text-gray-900">Total Cost:</span>
-            <span className="text-2xl font-bold text-blue-600">₹{totalPrice}</span>
+            <span className="text-2xl font-bold text-amber-700">₹{totalPrice}</span>
           </div>
         </div>
       )}
@@ -125,9 +125,9 @@ export const RitualKitSelection: React.FC<RitualKitSelectionProps> = ({
           <button
             onClick={onNext}
             className="
-              bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium
+              bg-amber-700 hover:bg-amber-800 text-white px-8 py-3 rounded-lg font-medium
               transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1
-              focus:outline-none focus:ring-4 focus:ring-blue-200
+              focus:outline-none focus:ring-4 focus:ring-amber-200
             "
           >
             Continue to Services

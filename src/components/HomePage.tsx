@@ -7,7 +7,7 @@ interface HomePageProps {
 
 export const HomePage: React.FC<HomePageProps> = ({ onStart }) => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+    <div className="min-h-screen bg-gradient-to-br from-amber-50 to-orange-100">
       <div className="container mx-auto px-6 py-12">
         <div className="max-w-4xl mx-auto text-center">
           {/* Header */}
@@ -28,7 +28,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onStart }) => {
           {/* Features */}
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-              <Heart className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+              <Heart className="w-12 h-12 text-amber-700 mx-auto mb-4" />
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Compassionate Care</h3>
               <p className="text-gray-600">
                 We understand your loss and provide gentle, respectful guidance through this difficult time.
@@ -36,7 +36,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onStart }) => {
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-              <Shield className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+              <Shield className="w-12 h-12 text-amber-700 mx-auto mb-4" />
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Verified Providers</h3>
               <p className="text-gray-600">
                 All our service providers are thoroughly verified and experienced in traditional practices.
@@ -44,7 +44,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onStart }) => {
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-              <Clock className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+              <Clock className="w-12 h-12 text-amber-700 mx-auto mb-4" />
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Quick Response</h3>
               <p className="text-gray-600">
                 Our team responds within 2 hours to ensure timely arrangements for your needs.
@@ -64,9 +64,9 @@ export const HomePage: React.FC<HomePageProps> = ({ onStart }) => {
             <button
               onClick={onStart}
               className="
-                bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-medium
+                bg-amber-700 hover:bg-amber-800 text-white px-8 py-4 rounded-lg text-lg font-medium
                 transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1
-                focus:outline-none focus:ring-4 focus:ring-blue-200
+                focus:outline-none focus:ring-4 focus:ring-amber-200
               "
             >
               Start Your Arrangement

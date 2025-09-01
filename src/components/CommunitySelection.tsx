@@ -40,7 +40,7 @@ export const CommunitySelection: React.FC<CommunitySelectionProps> = ({
               p-4 rounded-lg border-2 transition-all duration-300 text-left
               hover:shadow-md transform hover:-translate-y-1
               ${selectedCommunity === community
-                ? 'border-blue-600 bg-blue-50 text-blue-900'
+                ? 'border-amber-600 bg-amber-50 text-amber-900'
                 : 'border-gray-200 bg-white text-gray-700 hover:border-gray-300'
               }
             `}
@@ -66,9 +66,9 @@ export const CommunitySelection: React.FC<CommunitySelectionProps> = ({
           <button
             onClick={onNext}
             className="
-              bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium
+              bg-amber-700 hover:bg-amber-800 text-white px-8 py-3 rounded-lg font-medium
               transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1
-              focus:outline-none focus:ring-4 focus:ring-blue-200
+              focus:outline-none focus:ring-4 focus:ring-amber-200
             "
           >
             Continue to Region
